@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Math Quizz</title>
+		<link rel="stylesheet" type="text/css" href="style.css" />
+	</head>
+	<body>
+		<div class="container">
+			<h1>Math Quizz</h1>
+			<p>Select the type of quizz you want to take:</p>
+			<select name="Select your question" id="quiz-type">
+				<option value="addition">Addition</option>
+				<option value="subtraction">Subtraction</option>
+				<option value="multiplication">Multiplication</option>
+				<option value="division">Division</option>
+			</select>
+
+			<button id="start-quiz">Start Quiz</button>
+		</div>
+		<div id="quiz-container" class="container" style="display: none">
+			<h2 id="question"></h2>
+			<input
+				type="number"
+				id="answer"
+				placeholder="Enter your answer here"
+			/>
+			<button id="submit-answer">Submit Answer</button>
+			<p id="feedback"></p>
+			<button id="next-question" style="display: none">
+				Next Question
+			</button>
+		</div>
+
+		<script src="script.js"></script>
+	</body>
+</html>
